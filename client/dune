@@ -1,0 +1,7 @@
+(executables
+ (names counter)
+ (libraries base virtual_dom ezjsonm)
+ (preprocess (pps js_of_ocaml-ppx js_of_ocaml-ppx_deriving_json ppx_compare))
+ (flags -no-check-prims)
+ (js_of_ocaml
+  (flags +virtual_dom/virtualdom.compiled.js +base/runtime.js)))
